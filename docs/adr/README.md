@@ -29,3 +29,14 @@ Registro das decisões do Visconde, em ordem cronológica. `presumida` indica um
 | [0023](0023-referencias-ancoradas-em-simbolos.md) | Referências de código ancoradas em símbolos | aceita |
 | [0024](0024-codex-primeiro.md) | Codex é a primeira integração; Claude Code vem depois | aceita |
 | [0025](0025-claude-code-pelo-cli-do-usuario.md) | Claude Code entra pelo CLI do próprio usuário, sem tocar em credenciais | presumida |
+| [0026](0026-dois-documentos-com-referencias-cruzadas.md) | Visões comportamental e técnica em documentos separados, com referências cruzadas | aceita |
+| [0027](0027-tipos-fechados-e-versionados.md) | Tipos de bloco e de relação vêm de listas fechadas e versionadas | aceita |
+| [0028](0028-evidencia-e-confianca.md) | Toda afirmação do mapa declara sua evidência | aceita |
+| [0029](0029-formato-da-ancora.md) | A âncora identifica arquivo, símbolo e hash, e o aplicativo a valida | aceita |
+| [0030](0030-ids-semanticos-escolhidos-pelo-agente.md) | O agente escolhe IDs semânticos estáveis | aceita |
+| [0031](0031-operacoes-incrementais-e-leitura-compacta.md) | O agente escreve por operações incrementais e lê por consultas compactas | aceita |
+| [0032](0032-layout-pelo-aplicativo.md) | O aplicativo decide o layout | aceita |
+| [0033](0033-local-do-snapshot-escolhido-pelo-usuario.md) | O usuário escolhe onde o snapshot fica guardado | aceita |
+| [0034](0034-metricas-iniciais-do-snapshot.md) | Métricas iniciais para avaliar o snapshot | aceita, revisão pendente |
+| [0035](0035-codex-pelo-cli-instalado.md) | A 0.0.1 reutiliza o Codex CLI instalado e autenticado pelo usuário | aceita |
+| [0036](0036-agente-somente-leitura-na-0-0-1.md) | O agente roda somente leitura na 0.0.1 | aceita |

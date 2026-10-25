@@ -28,3 +28,4 @@ Registro das decisões do Visconde, em ordem cronológica. `presumida` indica um
 | [0022](0022-avaliacao-com-tres-projetos.md) | Avaliar o alpha com três projetos de portes diferentes | aceita |
 | [0023](0023-referencias-ancoradas-em-simbolos.md) | Referências de código ancoradas em símbolos | aceita |
 | [0024](0024-codex-primeiro.md) | Codex é a primeira integração; Claude Code vem depois | aceita |
+| [0025](0025-claude-code-pelo-cli-do-usuario.md) | Claude Code entra pelo CLI do próprio usuário, sem tocar em credenciais | presumida |

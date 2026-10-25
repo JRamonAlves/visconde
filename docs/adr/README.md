@@ -1,6 +1,6 @@
 # Decisões
 
-Registro das decisões do Visconde, em ordem cronológica. `presumida` indica uma decisão proposta e não contestada, que ainda precisa de confirmação explícita.
+Registro das decisões do Visconde, em ordem cronológica. `presumida` indica uma decisão proposta e não contestada, que ainda precisa de confirmação explícita. `proposta` lista opções ainda sem escolha. `revisão pendente` marca decisões aceitas que o usuário vai rever.
 
 | ADR | Decisão | Status |
 | --- | --- | --- |
@@ -40,3 +40,9 @@ Registro das decisões do Visconde, em ordem cronológica. `presumida` indica um
 | [0034](0034-metricas-iniciais-do-snapshot.md) | Métricas iniciais para avaliar o snapshot | aceita, revisão pendente |
 | [0035](0035-codex-pelo-cli-instalado.md) | A 0.0.1 reutiliza o Codex CLI instalado e autenticado pelo usuário | aceita |
 | [0036](0036-agente-somente-leitura-na-0-0-1.md) | O agente roda somente leitura na 0.0.1 | aceita |
+| [0037](0037-licenca-apache-2-0.md) | Licença Apache-2.0 | aceita |
+| [0038](0038-local-do-snapshot-definido-ao-abrir-o-projeto.md) | O local do snapshot é escolhido ao abrir o repositório, com o diretório do aplicativo como padrão | aceita |
+| [0039](0039-relacao-outra.md) | A lista de relações tem a saída `outra` | aceita, revisão pendente |
+| [0040](0040-estrategias-de-custo.md) | Estratégias para reduzir custo e tornar o mapa verificável | proposta |
+| [0041](0041-mapa-aparece-durante-a-analise.md) | O mapa aparece enquanto a análise acontece | aceita |
+| [0042](0042-analise-interrompida-preserva-o-mapa.md) | Análise cancelada ou com falha preserva o que já foi feito | aceita |

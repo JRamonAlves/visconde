@@ -48,3 +48,7 @@ Registro das decisões do Visconde, em ordem cronológica. `presumida` indica um
 | [0042](0042-analise-interrompida-preserva-o-mapa.md) | Análise cancelada ou com falha preserva o que já foi feito | aceita |
 | [0043](0043-instrucoes-da-analise.md) | As instruções da análise vêm do Visconde e o agente consulta a documentação do projeto | aceita |
 | [0044](0044-isolar-configuracao-do-repositorio-analisado.md) | O agente ignora hooks, MCPs e configurações do repositório analisado | aceita |
+| [0045](0045-mcp-por-http-local.md) | O servidor MCP do Visconde roda em HTTP local, com token por sessão | aceita |
+| [0046](0046-instrucoes-hostis-fora-da-0-0-1.md) | Defesa contra instruções hostis no repositório analisado fica fora da 0.0.1 | aceita |
+| [0047](0047-stack-da-interface.md) | Stack: React, electron-vite, React Flow com ELK, Shiki e TypeScript compiler API | aceita |
+| [0048](0048-monorepo-pnpm.md) | Monorepo pnpm com o schema do mapa em pacote próprio | aceita |

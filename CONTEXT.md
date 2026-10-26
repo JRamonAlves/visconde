@@ -42,6 +42,14 @@ _Avoid_: Visão de negócio, visão semântica
 Visão em que os blocos são elementos do código, como funções, módulos, chamadas e estado, ligados aos comportamentos que implementam.
 _Avoid_: Visão de código, visão detalhada
 
+**Documento comportamental**:
+Documento único do mapa que contém a visão comportamental do repositório inteiro.
+_Avoid_: Mapa principal, overview
+
+**Documento de aprofundamento**:
+Documento com a visão técnica de um único bloco comportamental, criado quando o usuário pede o aprofundamento desse bloco.
+_Avoid_: Documento técnico, submapa
+
 **Bloco**:
 Unidade do mapa que representa um comportamento ou um elemento do código.
 _Avoid_: Nó, card, caixa

@@ -1,6 +1,6 @@
 # Decisões
 
-Registro das decisões do Visconde, em ordem cronológica. `presumida` indica uma decisão proposta e não contestada, que ainda precisa de confirmação explícita. `proposta` lista opções ainda sem escolha. `revisão pendente` marca decisões aceitas que o usuário vai rever.
+Registro das decisões do Visconde, em ordem cronológica. `presumida` indica uma decisão proposta e não contestada, que ainda precisa de confirmação explícita. `proposta` lista opções ainda sem escolha. `revisão pendente` marca decisões aceitas que o usuário vai rever. `adiada` registra um tema deixado para depois.
 
 | ADR | Decisão | Status |
 | --- | --- | --- |
@@ -52,3 +52,6 @@ Registro das decisões do Visconde, em ordem cronológica. `presumida` indica um
 | [0046](0046-instrucoes-hostis-fora-da-0-0-1.md) | Defesa contra instruções hostis no repositório analisado fica fora da 0.0.1 | aceita |
 | [0047](0047-stack-da-interface.md) | Stack: React, electron-vite, React Flow com ELK, Shiki e TypeScript compiler API | aceita |
 | [0048](0048-monorepo-pnpm.md) | Monorepo pnpm com o schema do mapa em pacote próprio | aceita |
+| [0049](0049-um-documento-por-aprofundamento.md) | Cada aprofundamento gera seu próprio documento técnico | aceita |
+| [0050](0050-criterio-de-pronto-da-0-0-1.md) | Critério de pronto da 0.0.1 | aceita |
+| [0051](0051-distribuicao-adiada.md) | Distribuição fica para depois da 0.0.1 | adiada |

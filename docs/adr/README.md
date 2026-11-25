@@ -1,6 +1,6 @@
 # Decisões
 
-Registro das decisões do Visconde, em ordem cronológica. `presumida` indica uma decisão proposta e não contestada, que ainda precisa de confirmação explícita. `proposta` lista opções ainda sem escolha. `revisão pendente` marca decisões aceitas que o usuário vai rever. `adiada` registra um tema deixado para depois.
+Registro das decisões do Visconde, em ordem cronológica. `presumida` indica uma decisão proposta e não contestada, que ainda precisa de confirmação explícita. `proposta` lista opções ainda sem escolha. `revisão pendente` marca decisões aceitas que o usuário vai rever. `adiada` registra um tema deixado para depois. `aceita em parte` indica que só algumas opções da ADR foram escolhidas. `substituída por` aponta para a ADR que tomou o lugar desta.
 
 | ADR | Decisão | Status |
 | --- | --- | --- |
@@ -19,16 +19,16 @@ Registro das decisões do Visconde, em ordem cronológica. `presumida` indica um
 | [0013](0013-snapshot-persistente-revalidado-por-git.md) | Snapshot persistente, revalidado a partir do diff do Git | aceita |
 | [0014](0014-typescript-tsx-primeiro.md) | TypeScript e TSX são a primeira linguagem suportada | aceita |
 | [0015](0015-leitor-de-codigo-somente-leitura.md) | Leitor de código somente leitura, sem chamar o modelo | aceita |
-| [0016](0016-um-agente-por-sessao.md) | Um agente por sessão, escolhido pela assinatura do usuário | aceita |
-| [0017](0017-aplicativo-dono-do-mapa.md) | O aplicativo guarda o mapa; o agente envia atualizações estruturadas | presumida |
-| [0018](0018-integracao-por-adapter-e-mcp-interno.md) | Um adapter por agente e um servidor MCP interno por sessão | presumida |
+| [0016](0016-um-agente-por-sessao.md) | Um agente por sessão, escolhido pela assinatura do usuário | substituída por 0053 |
+| [0017](0017-aplicativo-dono-do-mapa.md) | O aplicativo guarda o mapa; o agente envia atualizações estruturadas | aceita |
+| [0018](0018-integracao-por-adapter-e-mcp-interno.md) | Um adapter por agente e um servidor MCP interno por sessão | aceita |
 | [0019](0019-interacoes-que-chamam-o-agente.md) | "Analisar código" inicia o agente; navegar é local | aceita |
 | [0020](0020-contestacao-por-texto.md) | Interpretações erradas são contestadas por texto | aceita |
 | [0021](0021-visualizacao-por-elementos-do-aplicativo.md) | O agente compõe a visualização com elementos que o aplicativo renderiza | aceita |
 | [0022](0022-avaliacao-com-tres-projetos.md) | Avaliar o alpha com três projetos de portes diferentes | aceita |
 | [0023](0023-referencias-ancoradas-em-simbolos.md) | Referências de código ancoradas em símbolos | aceita |
-| [0024](0024-codex-primeiro.md) | Codex é a primeira integração; Claude Code vem depois | aceita |
-| [0025](0025-claude-code-pelo-cli-do-usuario.md) | Claude Code entra pelo CLI do próprio usuário, sem tocar em credenciais | presumida |
+| [0024](0024-codex-primeiro.md) | Codex é a primeira integração; Claude Code vem depois | substituída por 0053 |
+| [0025](0025-claude-code-pelo-cli-do-usuario.md) | Claude Code entra pelo CLI do próprio usuário, sem tocar em credenciais | aceita |
 | [0026](0026-dois-documentos-com-referencias-cruzadas.md) | Visões comportamental e técnica em documentos separados, com referências cruzadas | aceita |
 | [0027](0027-tipos-fechados-e-versionados.md) | Tipos de bloco e de relação vêm de listas fechadas e versionadas | aceita |
 | [0028](0028-evidencia-e-confianca.md) | Toda afirmação do mapa declara sua evidência | aceita |
@@ -38,12 +38,12 @@ Registro das decisões do Visconde, em ordem cronológica. `presumida` indica um
 | [0032](0032-layout-pelo-aplicativo.md) | O aplicativo decide o layout | aceita |
 | [0033](0033-local-do-snapshot-escolhido-pelo-usuario.md) | O usuário escolhe onde o snapshot fica guardado | aceita |
 | [0034](0034-metricas-iniciais-do-snapshot.md) | Métricas iniciais para avaliar o snapshot | aceita, revisão pendente |
-| [0035](0035-codex-pelo-cli-instalado.md) | A 0.0.1 reutiliza o Codex CLI instalado e autenticado pelo usuário | aceita |
+| [0035](0035-codex-pelo-cli-instalado.md) | A 0.0.1 reutiliza o Codex CLI instalado e autenticado pelo usuário | substituída por 0053 |
 | [0036](0036-agente-somente-leitura-na-0-0-1.md) | O agente roda somente leitura na 0.0.1 | aceita |
 | [0037](0037-licenca-apache-2-0.md) | Licença Apache-2.0 | aceita |
 | [0038](0038-local-do-snapshot-definido-ao-abrir-o-projeto.md) | O local do snapshot é escolhido ao abrir o repositório, com o diretório do aplicativo como padrão | aceita |
 | [0039](0039-relacao-outra.md) | A lista de relações tem a saída `outra` | aceita, revisão pendente |
-| [0040](0040-estrategias-de-custo.md) | Estratégias para reduzir custo e tornar o mapa verificável | proposta |
+| [0040](0040-estrategias-de-custo.md) | Estratégias para reduzir custo e tornar o mapa verificável; índice de símbolos é a principal | aceita em parte |
 | [0041](0041-mapa-aparece-durante-a-analise.md) | O mapa aparece enquanto a análise acontece | aceita |
 | [0042](0042-analise-interrompida-preserva-o-mapa.md) | Análise cancelada ou com falha preserva o que já foi feito | aceita |
 | [0043](0043-instrucoes-da-analise.md) | As instruções da análise vêm do Visconde e o agente consulta a documentação do projeto | aceita |
@@ -52,6 +52,8 @@ Registro das decisões do Visconde, em ordem cronológica. `presumida` indica um
 | [0046](0046-instrucoes-hostis-fora-da-0-0-1.md) | Defesa contra instruções hostis no repositório analisado fica fora da 0.0.1 | aceita |
 | [0047](0047-stack-da-interface.md) | Stack: React, electron-vite, React Flow com ELK, Shiki e TypeScript compiler API | aceita |
 | [0048](0048-monorepo-pnpm.md) | Monorepo pnpm com o schema do mapa em pacote próprio | aceita |
-| [0049](0049-um-documento-por-aprofundamento.md) | Cada aprofundamento gera seu próprio documento técnico | aceita |
+| [0049](0049-um-documento-por-aprofundamento.md) | Cada aprofundamento gera seu próprio documento | aceita |
 | [0050](0050-criterio-de-pronto-da-0-0-1.md) | Critério de pronto da 0.0.1 | aceita |
 | [0051](0051-distribuicao-adiada.md) | Distribuição fica para depois da 0.0.1 | adiada |
+| [0052](0052-aprofundamento-recursivo-ate-o-codigo.md) | O aprofundamento é recursivo e termina no código; o agente marca os blocos folha | aceita |
+| [0053](0053-claude-code-unico-agente.md) | Claude Code é o único agente | aceita |

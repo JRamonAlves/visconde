@@ -1,5 +1,5 @@
 ---
-status: presumida
+status: aceita
 ---
 
 # Um adapter por agente e um servidor MCP interno por sessão

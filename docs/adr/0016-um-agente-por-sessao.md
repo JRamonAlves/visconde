@@ -1,5 +1,5 @@
 ---
-status: aceita
+status: substituída por 0053
 ---
 
 # Um agente por sessão, escolhido pela assinatura do usuário

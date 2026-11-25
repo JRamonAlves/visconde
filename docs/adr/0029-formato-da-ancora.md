@@ -5,3 +5,5 @@ status: aceita
 # A âncora identifica arquivo, símbolo e hash, e o aplicativo a valida
 
 A âncora contém arquivo, símbolo qualificado (por exemplo `OrderService.reserve`), tipo de símbolo, hash do texto do símbolo e a faixa de linhas, que serve só como dica. O aplicativo resolve cada âncora localmente quando a recebe e rejeita as que não resolvem, devolvendo o erro ao agente. Se o arquivo muda e o hash continua igual, a âncora segue válida. Se o hash muda, a região fica desatualizada. Detalha o ADR-0023.
+
+Arquivos que não são TypeScript, como `package.json`, configurações e migrations SQL, não têm símbolo. Nesses casos, a âncora aponta para o arquivo inteiro, com o hash do arquivo. Qualquer mudança nele deixa a referência desatualizada.

@@ -8,6 +8,4 @@ O snapshot guarda a versão do código analisada. Quando o código muda, o aplic
 
 A revalidação só começa por ação do usuário, para que um `git pull` não dispare trabalho do agente sozinho.
 
-## Presumido
-
-- Mudanças locais ainda sem commit também entram na comparação.
+Mudanças locais ainda sem commit também entram na comparação: o mapa é comparado com o código que está no disco.

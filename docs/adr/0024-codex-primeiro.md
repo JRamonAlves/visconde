@@ -1,5 +1,5 @@
 ---
-status: aceita
+status: substituída por 0053
 ---
 
 # Codex é a primeira integração; Claude Code vem depois

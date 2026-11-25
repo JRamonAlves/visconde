@@ -1,5 +1,5 @@
 ---
-status: aceita
+status: substituída por 0053
 ---
 
 # A 0.0.1 reutiliza o Codex CLI instalado e autenticado pelo usuário

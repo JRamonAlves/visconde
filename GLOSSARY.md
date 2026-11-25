@@ -13,7 +13,7 @@ Resultado da primeira análise. Apresenta as principais responsabilidades, ponto
 _Avoid_: Resumo, análise completa
 
 **Aprofundamento**:
-Análise de uma região já presente no mapa, pedida explicitamente pelo usuário, que acrescenta detalhe técnico sem perder a ligação com o comportamento de origem.
+Análise de um bloco já presente no mapa, pedida explicitamente pelo usuário, que acrescenta detalhe técnico sem perder a ligação com o bloco de origem. É recursivo: um bloco de um aprofundamento também pode ser aprofundado, até chegar ao código.
 _Avoid_: Drill-down, expansão automática
 
 **Região não investigada**:
@@ -31,7 +31,7 @@ Representação do repositório produzida pelo agente e guardada pelo aplicativo
 _Avoid_: Diagrama, grafo, gráfico
 
 **Visão**:
-Forma de olhar o mesmo mapa num nível de detalhe. As visões compartilham os mesmos blocos e relações.
+Forma de olhar o repositório num nível de detalhe. Cada visão vive em documentos próprios do mapa, ligados por referências cruzadas.
 _Avoid_: Segundo mapa, aba
 
 **Visão comportamental**:
@@ -39,7 +39,7 @@ Visão em que os blocos são etapas de comportamento do sistema, como "validar p
 _Avoid_: Visão de negócio, visão semântica
 
 **Visão técnica**:
-Visão em que os blocos são elementos do código, como funções, módulos, chamadas e estado, ligados aos comportamentos que implementam.
+Visão em que os blocos são elementos do código, como funções, módulos, chamadas e estado. Aparece nos documentos de aprofundamento, ligada ao bloco que a originou.
 _Avoid_: Visão de código, visão detalhada
 
 **Documento comportamental**:
@@ -47,12 +47,16 @@ Documento único do mapa que contém a visão comportamental do repositório int
 _Avoid_: Mapa principal, overview
 
 **Documento de aprofundamento**:
-Documento com a visão técnica de um único bloco comportamental, criado quando o usuário pede o aprofundamento desse bloco.
+Documento com a visão técnica de um único bloco, criado quando o usuário pede o aprofundamento desse bloco. O bloco de origem pode estar no documento comportamental ou em outro documento de aprofundamento.
 _Avoid_: Documento técnico, submapa
 
 **Bloco**:
-Unidade do mapa que representa um comportamento ou um elemento do código.
+Unidade do mapa que representa um comportamento ou um elemento do código. O mesmo bloco pode aparecer em mais de um documento.
 _Avoid_: Nó, card, caixa
+
+**Bloco folha**:
+Bloco que o agente marcou como sem mais o que aprofundar. Aprofundá-lo abre o leitor de código.
+_Avoid_: Bloco final, bloco atômico
 
 **Relação**:
 Ligação dirigida entre dois blocos com um significado declarado.
@@ -76,6 +80,10 @@ _Avoid_: Cache, histórico
 Snapshot cujo código analisado mudou depois da análise. Continua visível, com as regiões afetadas marcadas, até o usuário pedir a revalidação.
 _Avoid_: Snapshot inválido
 
+**Snapshot incompleto**:
+Snapshot cuja análise parou antes do fim, por cancelamento, falha ou teto de turnos. Pode ser retomado.
+_Avoid_: Snapshot parcial
+
 **Revalidação**:
 Análise que parte das diferenças entre a versão analisada e a atual e se estende às regiões que dependem delas.
 _Avoid_: Reanálise completa, refresh
@@ -95,5 +103,5 @@ Instrução do usuário, associada a blocos ou relações selecionados, para que
 _Avoid_: Prompt, tarefa
 
 **Impacto**:
-Consequência de uma alteração sobre o restante do repositório. Classifica-se como alterado, potencialmente afetado ou verificado.
+Consequência de uma alteração sobre o restante do repositório. Classifica-se como alterado, potencialmente afetado ou conferido (investigado e sem efeito).
 _Avoid_: Efeito colateral, blast radius
